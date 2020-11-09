@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace vraag2
 {
@@ -25,7 +20,22 @@ namespace vraag2
 
             // Bij neen stopt het programma.
 
+            string unicode = "ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            Random random = new Random();
 
+            char[] chars = new char[5];
+            for (int i = 0; i < 4; i++)
+            {
+                chars[i] = unicode[random.Next(0, unicode.Length)];
+                Console.Write(chars[i]);
+            }
+
+            Console.WriteLine("Do you want to change your pw then press 'enter'");
+            Console.ReadLine();
+            Console.Clear();
+
+            Console.WriteLine("Enter your new pw please then press 'enter' ");
+            Console.ReadLine();
 
             //string[] unicode =  {"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z",
             //                     "A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"
@@ -39,22 +49,7 @@ namespace vraag2
             //}
 
 
-            string unicode = "ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-            Random random = new Random();
-           
-            char[] chars = new char[5];
-            for (int i = 0; i < 4; i++)
-            {
-                chars[i] = unicode[random.Next(0, unicode.Length)];
-                Console.Write(chars[i]);
-            }
-            
-            Console.WriteLine("Do you want to change your pw then press 'enter'");
-            Console.ReadLine();
-            Console.Clear();
 
-            Console.WriteLine("Enter your new pw please then press 'enter' ");
-            Console.ReadLine();
 
 
 

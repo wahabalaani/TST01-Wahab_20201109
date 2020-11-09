@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Vraag_3
 {
@@ -19,15 +15,11 @@ namespace Vraag_3
 
             do
             {
-
-
-
                 if (postCode == postCoden[o])
                 {
                     Console.WriteLine($"{postCoden[o]} is the post code of {steden[o]}");
                     break;
                 }
-
                 if (postCode != postCoden[0])
                 {
                     Console.WriteLine($"not valid");
@@ -36,22 +28,7 @@ namespace Vraag_3
 
             } while (o == postCoden.Length);
 
-
-
-
-
             Console.ReadLine();
-
-            //for (int i = 0; i < steden.Length; i++)
-            //{
-            //    if (postCode == postCoden[i])
-            //    {
-
-            //        Console.WriteLine($"{postCoden[i]} is the post code of {steden[i]}");
-            //        break;
-            //    }
-            //}
-
         }
     }
 }
